@@ -1,7 +1,9 @@
 # Git branch naming convention
 
-Furthr to the Git Flow branching model, I propose the following style, workflow
+Further to the [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/) branching model, I propose the following style, workflow
 and naming convention for Git branches.
+
+
 
 ## Constant Branches
 
