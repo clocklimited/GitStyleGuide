@@ -17,10 +17,10 @@ release/{release-name}
 
 ### Examples
 
-release/sprint2
-release/launch
-release/phase2
-release/user-profile-upgrade
+* release/sprint2
+* release/launch
+* release/phase2
+* release/user-profile-upgrade
 
 These should be branched from develop once an agreed amount of completeness is
 reached. develop is not again merged into the feature branch, but small changes
@@ -35,8 +35,8 @@ feature/{feature-name}
 
 ### Examples
 
-feature/profile-page
-feature/access-control
+* feature/profile-page
+* feature/access-control
 
 The feature you are working on. Normally branched from develop during sprints,
 or from a release or possibly a hotfix if something is missed. It is very
@@ -49,8 +49,8 @@ in.
 hotfix/{reason}
 
 ### Examples
-hotfix/broken-images
-hotfix/ad-rename
+* hotfix/broken-images
+* hotfix/ad-rename
 
 Hot fixes are changes that resolve issues and add essential features
 outside of the planned release schedule.
@@ -97,6 +97,6 @@ Then merged back on to develop and master:
 
 Hotfixes should increase the [minor version number](http://en.wikipedia.org/wiki/Software_versioning)
 
-  git checkout hotfix/ad-rename
-  git tag 48.1.rc1
-  git push --tags
+    git checkout hotfix/ad-rename
+    git tag 48.1.rc1
+    git push --tags
