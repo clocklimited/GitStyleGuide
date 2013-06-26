@@ -3,8 +3,6 @@
 Further to the [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/) branching model, I propose the following style, workflow
 and naming convention for Git branches.
 
-
-
 ## Constant Branches
 
 Repos will always have these branches.
@@ -25,7 +23,7 @@ release/{release-name}
 * release/user-profile-upgrade
 
 These should be branched from develop once an agreed amount of completeness is
-reached. develop is not again merged into the feature branch, but small changes
+reached. develop is not again merged into the release branch, but small changes
 may be merged from other feature branches if something is missed or a long time
 elapses between creation and deployment. Once all checks pass this
 should be merge onto develop and master. The release name should be defined by
