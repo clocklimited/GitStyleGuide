@@ -116,23 +116,29 @@ Before any deployment the release or hotfix branch should be tagged with a versi
 number. Clock follow the [Semantic Versioning](http://semver.org/) for all
 software versioning.
 
-    git tag 1.48.0-rc1
-    git push --tags
-
-Deployment to testing for stakeholder to check should be either an
+Deployment to testing for a stakeholder to check should be either an
 [alpha](http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha) or
 [beta](http://en.wikipedia.org/wiki/Software_release_life_cycle#Beta) version
 with the tag: **1.48.0-alpha1**, **1.48.0-beta1**, **1.48.0-beta2**. Alpha can
-be any partial feature that you want to simply show some progress of. beta
+be any partial feature that you want to simply show some progress of. Beta
 releases should pass some basic quality assurance and have the potential to
 become a release candidate.
+
+### Signing Tags
+
+For production releases the release manager should use the **-s** option for
+**git tag** to verify that they are satisfied that all QA checks have been made
+and that the release is production ready.
+
+    git tag -s 1.48.0-rc1
+    git push --tags
 
 The first version of a release to go on staging should be the first
 [release candidate](http://en.wikipedia.org/wiki/Software_release_life_cycle#Release_candidate): **1.48.0-rc1** this should then increase, **1.48.0-rc2**, **1.48.0-rc3**,
 **1.48.0-rc4** until the release is deployed and signed off, at which point the
 last release candidate can be tagged as the final release.
 
-    git tag 1.48.0
+    git tag -s 1.48.0
     git push --tags
 
 Then merged back on to develop and master.
@@ -149,7 +155,7 @@ Then merged back on to develop and master.
 Hotfixes should increase the [patch version](http://semver.org/)
 
     git checkout hotfix/ad-rename
-    git tag 1.48.1-rc1
+    git tag -s 1.48.1-rc1
     git push --tags
 
 ### Pre-golive Releases
@@ -159,7 +165,7 @@ method as described above.
 
 ## Smooth Operations
 
-Even with an agreed process it can be very hard to keep all developers on the
+Even with an agreed method it can be very hard to keep all developers on the
 correct branch. Strong project leadership, good team communications and regular
 reviews of the 'git log' is required to ensure features are not lost and the
 team know where they should be committing and merging their work.
@@ -167,9 +173,9 @@ team know where they should be committing and merging their work.
 ## Release Manager
 
 Good process goes a long way to ensure a slick development and release effort,
-but don't think that you can get away without assigning every project one person
-who is responsible for creating releases, arranging the deployment,
-communicating with the team and stakeholders, and then ensuring the merging down
-after deployment. A good release manager will keep the repo healthy and well
-ordered, keep the development team happy and well informed and give a premium
-customer experience.
+but it is just as important to assign every project one person who is
+responsible for creating releases, arranging the deployment, communicating with
+the team and stakeholders, and then ensuring the merging down after deployment.
+A good release manager will keep the repo healthy and well ordered, keep the
+development team happy and well informed and give a premium experience to all
+stakeholder and customers.
