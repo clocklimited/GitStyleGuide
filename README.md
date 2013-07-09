@@ -38,7 +38,7 @@ will be the most up to date staging release.
 Receives all features during an active development phase of a project. This
 should be as stable as possible so that the team have an up to date and reliable
 base to work from. All tests and QA should pass on this branch so [continuous
-integrationn](https://en.wikipedia.org/wiki/Continuous_integration) is possible.
+integration](https://en.wikipedia.org/wiki/Continuous_integration) is possible.
 
 ### Single Commit Features
 
