@@ -157,7 +157,7 @@ Hotfixes should increase the [patch version](http://semver.org/)
 Before a project is publicly released, 0.x releases can be made using the same
 method as described above.
 
-## Smooth Operator
+## Smooth Operations
 
 Even with an agreed process it can be very hard to keep all developers on the
 correct branch. Strong project leadership, good team communications and regular
@@ -166,10 +166,10 @@ team know where they should be committing and merging their work.
 
 ## Release Manager
 
-This process goes a long way to ensure a slick development and release effort,
+Good process goes a long way to ensure a slick development and release effort,
 but don't think that you can get away without assigning every project one person
 who is responsible for creating releases, arranging the deployment,
-communicating with the team and stakeholders, then ensure the merging down after
-deployment. A good release manager will keep the repo healthy and well ordered,
-the development team happy and well informed and give a premium customer
-experience.
+communicating with the team and stakeholders, and then ensuring the merging down
+after deployment. A good release manager will keep the repo healthy and well
+ordered, keep the development team happy and well informed and give a premium
+customer experience.
